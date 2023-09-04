@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Dashboard </title>
+  <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="menu">
+      <a href="#" class="logo">
+        <img src="https://aims.indianrailways.gov.in/IPAS/loginImages/images/rail-icon-in.png" class="abc-img" width="150" height="150">
+       
+      </a>
+      <ul class="nav-links">
+   <li><a href="#"><i class="fas fa-house-user"></i><p>Home</p></a></li>
+   <li><a href="#"><i class="fa-solid fa-user"></i><p></p>Profile</p></a></li>
+   <li><a href="#"><i class="fa-solid fa-chart-line"></i><p></p>Pages</p></a></li>
+   <li><a href="MPR.html"><i class="fa-solid fa-user"></i><p>MPR</p></a></li>
+   <li><a href="#"><i class="fa-solid fa-right-to-bracket"></i><p></p>Login</p></a></li>
+   <li><a href="#"><i class="fa-solid fa-eject"></i><p></p>About</p></a></li>
+   <li><a href="#"><i class="fa-brands fa-algolia"></i><p></p>FAQ</p></a></li>
+   <div class="active"></div>
+   </ul>
+   <ul class="nav-links">
+    <!-- Other menu items -->
+
+    <!-- Link to Profile Page -->
+    
+    
+    <!-- Other menu items -->
+  </ul>
+  </div>
+  <div class="container">
+    <h1>Dashboard</h1>
+    <div class="filters">
+      <select id="planHeadDropdown">
+        <option value="">Plan Head overall</option>
+        <option value="">Plan Head Total</option>
+        <option value="">Plan Head Capital</option>
+        <option value="">Plan Head DRF</option>
+        <option value="">Plan Head DF</option>
+        <option value="">Plan Head SF</option>
+        <option value="">Plan Head RRSK</option>
+        <option value="">Plan Head Capital_N</option>
+        <!-- Populate with plan head options -->
+      </select>
+      <input type="text" id="searchInput" placeholder="Search Particular">
+    </div>
+    <div class="data-table">
+      <table>
+          <tr >
+            <th rowspan="2">Plan Head</th>
+            <th rowspan="2">Particular</th>
+            <th rowspan="2">Actual 2022-23</th>
+            <th colspan="4">Total</th>
+            <th colspan="4">Capital</th>
+            <th colspan="4">DRF</th>
+            <th colspan="4">DF</th>
+            <th colspan="4">SF</th>
+            <th colspan="4">RRSK</th>
+            <th colspan="4">Capital_N</th>
+            <!-- More headers... -->
+          </tr>
+          <tr>
+            <th rowspan="4">OBG 2023-24</th>
+            <th rowspan="4">AE 2023-24</th>
+            <th rowspan="4">Var.</th>
+            <th rowspan="4">% Utilization</th>
+            <th rowspan="4">OBG 2023-24</th>
+            <th rowspan="4">AE 2023-24</th>
+            <th rowspan="4">Var.</th>
+            <th rowspan="4">% Utilization</th>
+            <th  rowspan="4">OBG 2023-24</th>
+            <th  rowspan="4">AE 2023-24</th>
+            <th  rowspan="4">Var.</th>
+            <th  rowspan="4">% Utilization</th>
+            <th rowspan="4">OBG 2023-24</th>
+            <th rowspan="4">AE 2023-24</th>
+            <th rowspan="4">Var.</th>
+            <th rowspan="4">% Utilization</th>
+            <th rowspan="4">OBG 2023-24</th>
+            <th rowspan="4">AE 2023-24</th>
+            <th rowspan="4">Var.</th>
+            <th rowspan="4">% Utilization</th>
+            <th rowspan="4">OBG 2023-24</th>
+            <th rowspan="4">AE 2023-24</th>
+            <th rowspan="4">Var.</th>
+            <th rowspan="4">% Utilization</th>
+            <th rowspan="4">OBG 2023-24</th>
+            <th rowspan="4">AE 2023-24</th>
+            <th rowspan="4">Var.</th>
+            <th rowspan="4">% Utilization</th>
+          </tr>
+        <tbody id="dataBody">
+          <!-- Data rows will be inserted here -->
+        </tbody>
+      </table>
+      <div class="table container">
+        <button id="All Total Data">All Total Data</button>
+        <button id="All Capital Data">All Capital Data</button>
+        <button id="All DRF Data">All DRF Data</button>
+        <button id="All DF Data">All DF Data</button>
+          <button id="All SF Data">All SF Data</button>
+        <button id="All RRSK Data">All RRSK Data</button>
+        <button id="All Capital_N Data">All Capital_N Data</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
